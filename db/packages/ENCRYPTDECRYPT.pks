@@ -1,0 +1,17 @@
+CREATE OR REPLACE
+"PACKAGE ENCRYPTDECRYPT
+"
+"AS
+"
+"   FUNCTION encrypt (p_text IN VARCHAR2)
+"
+"      RETURN RAW;
+"
+"
+"
+"   FUNCTION decrypt (p_raw IN RAW)
+"
+"      RETURN VARCHAR2;
+"
+"END ENCRYPTDECRYPT;"
+/

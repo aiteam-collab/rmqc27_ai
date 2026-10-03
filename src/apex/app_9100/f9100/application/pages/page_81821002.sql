@@ -1,0 +1,604 @@
+prompt --application/pages/page_81821002
+begin
+--   Manifest
+--     PAGE: 81821002
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.0'
+,p_default_workspace_id=>70183973784188715
+,p_default_application_id=>9100
+,p_default_id_offset=>70189399542726671
+,p_default_owner=>'RMQC27_AI'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>81821002
+,p_name=>'Travel Reimbursement - Overseas'
+,p_alias=>'TRAVEL-REIMBURSEMENT-OVERSEAS'
+,p_step_title=>'Travel Reimbursement - Overseas'
+,p_autocomplete_on_off=>'OFF'
+,p_step_template=>wwv_flow_imp.id(11134577066937722959)
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_page_component_map=>'18'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(7805573204673962229)
+,p_plug_name=>'hrm_trvl_expns_hd'
+,p_static_id=>'hrm-trvl-expns-hd'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_imp.id(10650515782604505361)
+,p_plug_display_sequence=>10
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'TABLE'
+,p_query_table=>'HRM_TRVL_EXPNS_HD'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header=>'hrm_trvl_expns_hd'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+,p_ai_enabled=>false
+);
+wwv_flow_imp_page.create_worksheet(
+ p_id=>wwv_flow_imp.id(7805573275999962230)
+,p_max_row_count=>'1000000'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_lazy_loading=>false
+,p_show_detail_link=>'N'
+,p_show_notify=>'Y'
+,p_download_formats=>'CSV:HTML:XLSX:PDF'
+,p_enable_mail_download=>'Y'
+,p_internal_uid=>2323611440456351202
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575483456962252)
+,p_db_column_name=>'HTEH_ADV_PYMNT_MODE'
+,p_display_order=>220
+,p_column_identifier=>'V'
+,p_column_label=>'Hteh Adv Pymnt Mode'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575302748962250)
+,p_db_column_name=>'HTEH_ADV_RQRD_FLAG'
+,p_display_order=>200
+,p_column_identifier=>'T'
+,p_column_label=>'Hteh Adv Rqrd Flag'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575636241962254)
+,p_db_column_name=>'HTEH_APPR_ADV_AMT'
+,p_display_order=>240
+,p_column_identifier=>'X'
+,p_column_label=>'Hteh Appr Adv Amt'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575562276962253)
+,p_db_column_name=>'HTEH_BANK_AC_ID'
+,p_display_order=>230
+,p_column_identifier=>'W'
+,p_column_label=>'Hteh Bank Ac Id'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573427655962231)
+,p_db_column_name=>'HTEH_BU'
+,p_display_order=>10
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'A'
+,p_column_label=>'Hteh Bu'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576811524962265)
+,p_db_column_name=>'HTEH_CRE_BY'
+,p_display_order=>350
+,p_column_identifier=>'AI'
+,p_column_label=>'Hteh Cre By'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577061166962268)
+,p_db_column_name=>'HTEH_CRE_DATE'
+,p_display_order=>380
+,p_column_identifier=>'AL'
+,p_column_label=>'Hteh Cre Date'
+,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577572771962273)
+,p_db_column_name=>'HTEH_CRE_EMP_ID'
+,p_display_order=>430
+,p_column_identifier=>'AQ'
+,p_column_label=>'Hteh Cre Emp Id'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576897853962266)
+,p_db_column_name=>'HTEH_CRE_IP_ADDR'
+,p_display_order=>360
+,p_column_identifier=>'AJ'
+,p_column_label=>'Hteh Cre Ip Addr'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576982497962267)
+,p_db_column_name=>'HTEH_CRE_OS_USER'
+,p_display_order=>370
+,p_column_identifier=>'AK'
+,p_column_label=>'Hteh Cre Os User'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574228925962239)
+,p_db_column_name=>'HTEH_DEPT_ID'
+,p_display_order=>90
+,p_column_identifier=>'I'
+,p_column_label=>'Hteh Dept Id'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573931439962236)
+,p_db_column_name=>'HTEH_DOB'
+,p_display_order=>60
+,p_column_identifier=>'F'
+,p_column_label=>'Hteh Dob'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573543006962233)
+,p_db_column_name=>'HTEH_DOC_DATE'
+,p_display_order=>30
+,p_column_identifier=>'C'
+,p_column_label=>'Hteh Doc Date'
+,p_column_type=>'DATE'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573446861962232)
+,p_db_column_name=>'HTEH_DOC_NO'
+,p_display_order=>20
+,p_is_primary_key=>'Y'
+,p_column_identifier=>'B'
+,p_column_label=>'Hteh Doc No'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574509581962242)
+,p_db_column_name=>'HTEH_EMAIL_ID'
+,p_display_order=>120
+,p_column_identifier=>'L'
+,p_column_label=>'Hteh Email Id'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573804194962235)
+,p_db_column_name=>'HTEH_EMP_ID'
+,p_display_order=>50
+,p_column_identifier=>'E'
+,p_column_label=>'Hteh Emp Id'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574021365962237)
+,p_db_column_name=>'HTEH_GENDER'
+,p_display_order=>70
+,p_column_identifier=>'G'
+,p_column_label=>'Hteh Gender'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575740607962255)
+,p_db_column_name=>'HTEH_JRNL_FLAG'
+,p_display_order=>250
+,p_column_identifier=>'Y'
+,p_column_label=>'Hteh Jrnl Flag'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576625414962263)
+,p_db_column_name=>'HTEH_JRNL_SEL_FLAG'
+,p_display_order=>330
+,p_column_identifier=>'AG'
+,p_column_label=>'Hteh Jrnl Sel Flag'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576707071962264)
+,p_db_column_name=>'HTEH_JRNL_SEL_USER'
+,p_display_order=>340
+,p_column_identifier=>'AH'
+,p_column_label=>'Hteh Jrnl Sel User'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576502064962262)
+,p_db_column_name=>'HTEH_JRNL_STATUS'
+,p_display_order=>320
+,p_column_identifier=>'AF'
+,p_column_label=>'Hteh Jrnl Status'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577860145962276)
+,p_db_column_name=>'HTEH_LOC'
+,p_display_order=>460
+,p_column_identifier=>'AT'
+,p_column_label=>'Hteh Loc'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574422870962241)
+,p_db_column_name=>'HTEH_MOBILE_NO'
+,p_display_order=>110
+,p_column_identifier=>'K'
+,p_column_label=>'Hteh Mobile No'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576401736962261)
+,p_db_column_name=>'HTEH_ORG_EXPNS_AMT'
+,p_display_order=>310
+,p_column_identifier=>'AE'
+,p_column_label=>'Hteh Org Expns Amt'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574289027962240)
+,p_db_column_name=>'HTEH_PLNT'
+,p_display_order=>100
+,p_column_identifier=>'J'
+,p_column_label=>'Hteh Plnt'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574082536962238)
+,p_db_column_name=>'HTEH_POS_ID'
+,p_display_order=>80
+,p_column_identifier=>'H'
+,p_column_label=>'Hteh Pos Id'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575922529962256)
+,p_db_column_name=>'HTEH_PV_NO'
+,p_display_order=>260
+,p_column_identifier=>'Z'
+,p_column_label=>'Hteh Pv No'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576033294962257)
+,p_db_column_name=>'HTEH_PV_PFX'
+,p_display_order=>270
+,p_column_identifier=>'AA'
+,p_column_label=>'Hteh Pv Pfx'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574831156962245)
+,p_db_column_name=>'HTEH_REMARKS'
+,p_display_order=>150
+,p_column_identifier=>'O'
+,p_column_label=>'Hteh Remarks'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575339565962251)
+,p_db_column_name=>'HTEH_REQ_ADV_AMT'
+,p_display_order=>210
+,p_column_identifier=>'U'
+,p_column_label=>'Hteh Req Adv Amt'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576178251962259)
+,p_db_column_name=>'HTEH_SEL_FLAG'
+,p_display_order=>290
+,p_column_identifier=>'AC'
+,p_column_label=>'Hteh Sel Flag'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576054930962258)
+,p_db_column_name=>'HTEH_SEL_USER'
+,p_display_order=>280
+,p_column_identifier=>'AB'
+,p_column_label=>'Hteh Sel User'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574858769962246)
+,p_db_column_name=>'HTEH_STATUS'
+,p_display_order=>160
+,p_column_identifier=>'P'
+,p_column_label=>'Hteh Status'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575024040962247)
+,p_db_column_name=>'HTEH_TCKT_RQRD_FLAG'
+,p_display_order=>170
+,p_column_identifier=>'Q'
+,p_column_label=>'Hteh Tckt Rqrd Flag'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805576284057962260)
+,p_db_column_name=>'HTEH_TOT_EXPNS_AMT'
+,p_display_order=>300
+,p_column_identifier=>'AD'
+,p_column_label=>'Hteh Tot Expns Amt'
+,p_column_type=>'NUMBER'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577750111962275)
+,p_db_column_name=>'HTEH_TRVL_ARGMNTS'
+,p_display_order=>450
+,p_column_identifier=>'AS'
+,p_column_label=>'Hteh Trvl Argmnts'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575198041962249)
+,p_db_column_name=>'HTEH_TRVL_CLASS'
+,p_display_order=>190
+,p_column_identifier=>'S'
+,p_column_label=>'Hteh Trvl Class'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805575113817962248)
+,p_db_column_name=>'HTEH_TRVL_MODE'
+,p_display_order=>180
+,p_column_identifier=>'R'
+,p_column_label=>'Hteh Trvl Mode'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574661864962244)
+,p_db_column_name=>'HTEH_TRVL_RQST_NO'
+,p_display_order=>140
+,p_column_identifier=>'N'
+,p_column_label=>'Hteh Trvl Rqst No'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805573701669962234)
+,p_db_column_name=>'HTEH_TRVL_TYPE'
+,p_display_order=>40
+,p_column_identifier=>'D'
+,p_column_label=>'Hteh Trvl Type'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577169460962269)
+,p_db_column_name=>'HTEH_UPD_BY'
+,p_display_order=>390
+,p_column_identifier=>'AM'
+,p_column_label=>'Hteh Upd By'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577499588962272)
+,p_db_column_name=>'HTEH_UPD_DATE'
+,p_display_order=>420
+,p_column_identifier=>'AP'
+,p_column_label=>'Hteh Upd Date'
+,p_column_type=>'DATE'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_tz_dependent=>'N'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577706957962274)
+,p_db_column_name=>'HTEH_UPD_EMP_ID'
+,p_display_order=>440
+,p_column_identifier=>'AR'
+,p_column_label=>'Hteh Upd Emp Id'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577251162962270)
+,p_db_column_name=>'HTEH_UPD_IP_ADDR'
+,p_display_order=>400
+,p_column_identifier=>'AN'
+,p_column_label=>'Hteh Upd Ip Addr'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805577396744962271)
+,p_db_column_name=>'HTEH_UPD_OS_USER'
+,p_display_order=>410
+,p_column_identifier=>'AO'
+,p_column_label=>'Hteh Upd Os User'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN_ESCAPE_SC'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_column(
+ p_id=>wwv_flow_imp.id(7805574602159962243)
+,p_db_column_name=>'HTEH_VISIT_PURPOSE'
+,p_display_order=>130
+,p_column_identifier=>'M'
+,p_column_label=>'Hteh Visit Purpose'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_use_as_row_header=>'N'
+,p_available_clientside=>'N'
+);
+wwv_flow_imp_page.create_worksheet_rpt(
+ p_id=>wwv_flow_imp.id(7805594995307974129)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'23236332'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'HTEH_BU:HTEH_DOC_NO:HTEH_DOC_DATE:HTEH_TRVL_TYPE:HTEH_EMP_ID:HTEH_DOB:HTEH_GENDER:HTEH_POS_ID:HTEH_DEPT_ID:HTEH_PLNT:HTEH_MOBILE_NO:HTEH_EMAIL_ID:HTEH_VISIT_PURPOSE:HTEH_TRVL_RQST_NO:HTEH_REMARKS:HTEH_STATUS:HTEH_TCKT_RQRD_FLAG:HTEH_TRVL_MODE:HTEH_TR'
+||'VL_CLASS:HTEH_ADV_RQRD_FLAG:HTEH_REQ_ADV_AMT:HTEH_ADV_PYMNT_MODE:HTEH_BANK_AC_ID:HTEH_APPR_ADV_AMT:HTEH_JRNL_FLAG:HTEH_PV_NO:HTEH_PV_PFX:HTEH_SEL_USER:HTEH_SEL_FLAG:HTEH_TOT_EXPNS_AMT:HTEH_ORG_EXPNS_AMT:HTEH_JRNL_STATUS:HTEH_JRNL_SEL_FLAG:HTEH_JRNL_S'
+||'EL_USER:HTEH_CRE_BY:HTEH_CRE_IP_ADDR:HTEH_CRE_OS_USER:HTEH_CRE_DATE:HTEH_UPD_BY:HTEH_UPD_IP_ADDR:HTEH_UPD_OS_USER:HTEH_UPD_DATE:HTEH_CRE_EMP_ID:HTEH_UPD_EMP_ID:HTEH_TRVL_ARGMNTS:HTEH_LOC'
+);
+wwv_flow_imp.component_end;
+end;
+/

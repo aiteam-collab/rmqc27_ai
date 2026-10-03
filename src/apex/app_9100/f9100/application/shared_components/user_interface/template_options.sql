@@ -1,0 +1,810 @@
+prompt --application/shared_components/user_interface/template_options
+begin
+--   Manifest
+--     THEME OPTIONS: 42
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.0'
+,p_default_workspace_id=>70183973784188715
+,p_default_application_id=>9100
+,p_default_id_offset=>70189399542726671
+,p_default_owner=>'RMQC27_AI'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650594779571505451)
+,p_theme_id=>42
+,p_name=>'PILL'
+,p_static_id=>'pill'
+,p_display_name=>'Inner Button'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--pill'
+,p_group_id=>wwv_flow_imp.id(10650594629245505451)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650595002944505451)
+,p_theme_id=>42
+,p_name=>'PILLEND'
+,p_static_id=>'pillend'
+,p_display_name=>'Last Button'
+,p_display_sequence=>30
+,p_css_classes=>'t-Button--pillEnd'
+,p_group_id=>wwv_flow_imp.id(10650594629245505451)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650595133805505451)
+,p_theme_id=>42
+,p_name=>'PILLSTART'
+,p_static_id=>'pillstart'
+,p_display_name=>'First Button'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--pillStart'
+,p_group_id=>wwv_flow_imp.id(10650594629245505451)
+,p_template_types=>'BUTTON'
+,p_help_text=>'Use this for the start of a pill button.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650592974556505450)
+,p_theme_id=>42
+,p_name=>'LARGE'
+,p_static_id=>'large'
+,p_display_name=>'Large'
+,p_display_sequence=>30
+,p_css_classes=>'t-Button--large'
+,p_group_id=>wwv_flow_imp.id(10650592819409505450)
+,p_template_types=>'BUTTON'
+,p_help_text=>'A large button.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650595810792505451)
+,p_theme_id=>42
+,p_name=>'SMALL'
+,p_static_id=>'small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--small'
+,p_group_id=>wwv_flow_imp.id(10650592819409505450)
+,p_template_types=>'BUTTON'
+,p_help_text=>'A small button.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650596595288505453)
+,p_theme_id=>42
+,p_name=>'TINY'
+,p_static_id=>'tiny'
+,p_display_name=>'Tiny'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--tiny'
+,p_group_id=>wwv_flow_imp.id(10650592819409505450)
+,p_template_types=>'BUTTON'
+,p_help_text=>'A very small button.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650591426785505450)
+,p_theme_id=>42
+,p_name=>'LARGEBOTTOMMARGIN'
+,p_static_id=>'largebottommargin'
+,p_display_name=>'Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--gapBottom'
+,p_group_id=>wwv_flow_imp.id(10650591139645505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650593811653505451)
+,p_theme_id=>42
+,p_name=>'SMALLBOTTOMMARGIN'
+,p_static_id=>'smallbottommargin'
+,p_display_name=>'Small'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--padBottom'
+,p_group_id=>wwv_flow_imp.id(10650591139645505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650591828030505450)
+,p_theme_id=>42
+,p_name=>'LARGELEFTMARGIN'
+,p_static_id=>'largeleftmargin'
+,p_display_name=>'Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--gapLeft'
+,p_group_id=>wwv_flow_imp.id(10650591572743505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650594017844505451)
+,p_theme_id=>42
+,p_name=>'SMALLLEFTMARGIN'
+,p_static_id=>'smallleftmargin'
+,p_display_name=>'Small'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--padLeft'
+,p_group_id=>wwv_flow_imp.id(10650591572743505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650592137497505450)
+,p_theme_id=>42
+,p_name=>'LARGERIGHTMARGIN'
+,p_static_id=>'largerightmargin'
+,p_display_name=>'Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--gapRight'
+,p_group_id=>wwv_flow_imp.id(10650591964436505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650594197175505451)
+,p_theme_id=>42
+,p_name=>'SMALLRIGHTMARGIN'
+,p_static_id=>'smallrightmargin'
+,p_display_name=>'Small'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--padRight'
+,p_group_id=>wwv_flow_imp.id(10650591964436505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650592616366505450)
+,p_theme_id=>42
+,p_name=>'LARGETOPMARGIN'
+,p_static_id=>'largetopmargin'
+,p_display_name=>'Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--gapTop'
+,p_group_id=>wwv_flow_imp.id(10650592358639505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650594400510505451)
+,p_theme_id=>42
+,p_name=>'SMALLTOPMARGIN'
+,p_static_id=>'smalltopmargin'
+,p_display_name=>'Small'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--padTop'
+,p_group_id=>wwv_flow_imp.id(10650592358639505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650593371397505450)
+,p_theme_id=>42
+,p_name=>'DISPLAY_AS_LINK'
+,p_static_id=>'display-as-link'
+,p_display_name=>'Display as Link'
+,p_display_sequence=>30
+,p_css_classes=>'t-Button--link'
+,p_group_id=>wwv_flow_imp.id(10650593156281505450)
+,p_template_types=>'BUTTON'
+,p_help_text=>'This option makes the button appear as a text link.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650593562758505451)
+,p_theme_id=>42
+,p_name=>'NOUI'
+,p_static_id=>'noui'
+,p_display_name=>'Remove UI Decoration'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--noUI'
+,p_group_id=>wwv_flow_imp.id(10650593156281505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650595624373505451)
+,p_theme_id=>42
+,p_name=>'SIMPLE'
+,p_static_id=>'simple'
+,p_display_name=>'Simple'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--simple'
+,p_group_id=>wwv_flow_imp.id(10650593156281505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650590984719505450)
+,p_theme_id=>42
+,p_name=>'DANGER'
+,p_static_id=>'danger'
+,p_display_name=>'Danger'
+,p_display_sequence=>30
+,p_css_classes=>'t-Button--danger'
+,p_group_id=>wwv_flow_imp.id(10650590751183505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650595356180505451)
+,p_theme_id=>42
+,p_name=>'PRIMARY'
+,p_static_id=>'primary'
+,p_display_name=>'Primary'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--primary'
+,p_group_id=>wwv_flow_imp.id(10650590751183505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650596340749505453)
+,p_theme_id=>42
+,p_name=>'SUCCESS'
+,p_static_id=>'success'
+,p_display_name=>'Success'
+,p_display_sequence=>40
+,p_css_classes=>'t-Button--success'
+,p_group_id=>wwv_flow_imp.id(10650590751183505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650596769614505453)
+,p_theme_id=>42
+,p_name=>'WARNING'
+,p_static_id=>'warning'
+,p_display_name=>'Warning'
+,p_display_sequence=>20
+,p_css_classes=>'t-Button--warning'
+,p_group_id=>wwv_flow_imp.id(10650590751183505450)
+,p_template_types=>'BUTTON'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650596219252505453)
+,p_theme_id=>42
+,p_name=>'STRETCH'
+,p_static_id=>'stretch'
+,p_display_name=>'Stretch'
+,p_display_sequence=>10
+,p_css_classes=>'t-Button--stretch'
+,p_group_id=>wwv_flow_imp.id(10650595939674505451)
+,p_template_types=>'BUTTON'
+,p_help_text=>'Stretches button to fill container'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650601016890505454)
+,p_theme_id=>42
+,p_name=>'STRETCH_FORM_ITEM'
+,p_static_id=>'stretch-form-item'
+,p_display_name=>'Stretch Form Item'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form-fieldContainer--stretchInputs'
+,p_template_types=>'FIELD'
+,p_help_text=>'Stretches the form item to fill its container.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650583023765505442)
+,p_theme_id=>42
+,p_name=>'FBM_LARGE'
+,p_static_id=>'fbm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-bottom-lg'
+,p_group_id=>wwv_flow_imp.id(10650582770142505442)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a large bottom margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650583619734505443)
+,p_theme_id=>42
+,p_name=>'FBM_MEDIUM'
+,p_static_id=>'fbm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-bottom-md'
+,p_group_id=>wwv_flow_imp.id(10650582770142505442)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a medium bottom margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650583946548505443)
+,p_theme_id=>42
+,p_name=>'FBM_NONE'
+,p_static_id=>'fbm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-bottom-none'
+,p_group_id=>wwv_flow_imp.id(10650582770142505442)
+,p_template_types=>'FIELD'
+,p_help_text=>'Removes the bottom margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650584404635505443)
+,p_theme_id=>42
+,p_name=>'FBM_SMALL'
+,p_static_id=>'fbm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-bottom-sm'
+,p_group_id=>wwv_flow_imp.id(10650582770142505442)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a small bottom margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650599988778505454)
+,p_theme_id=>42
+,p_name=>'POST_TEXT_BLOCK'
+,p_static_id=>'post-text-block'
+,p_display_name=>'Display as Block'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form-fieldContainer--postTextBlock'
+,p_group_id=>wwv_flow_imp.id(10650599786438505454)
+,p_template_types=>'FIELD'
+,p_help_text=>'Displays the Item Post Text in a block style immediately after the item.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650600343868505454)
+,p_theme_id=>42
+,p_name=>'PRE_TEXT_BLOCK'
+,p_static_id=>'pre-text-block'
+,p_display_name=>'Display as Block'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form-fieldContainer--preTextBlock'
+,p_group_id=>wwv_flow_imp.id(10650600169447505454)
+,p_template_types=>'FIELD'
+,p_help_text=>'Displays the Item Pre Text in a block style immediately before the item.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650585027725505443)
+,p_theme_id=>42
+,p_name=>'FLM_LARGE'
+,p_static_id=>'flm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-left-lg'
+,p_group_id=>wwv_flow_imp.id(10650584785378505443)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a large left margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650585529420505443)
+,p_theme_id=>42
+,p_name=>'FLM_MEDIUM'
+,p_static_id=>'flm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-left-md'
+,p_group_id=>wwv_flow_imp.id(10650584785378505443)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a medium left margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650585977640505445)
+,p_theme_id=>42
+,p_name=>'FLM_NONE'
+,p_static_id=>'flm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-left-none'
+,p_group_id=>wwv_flow_imp.id(10650584785378505443)
+,p_template_types=>'FIELD'
+,p_help_text=>'Removes the left margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650586366028505445)
+,p_theme_id=>42
+,p_name=>'FLM_SMALL'
+,p_static_id=>'flm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-left-sm'
+,p_group_id=>wwv_flow_imp.id(10650584785378505443)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a small left margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650600734682505454)
+,p_theme_id=>42
+,p_name=>'DISPLAY_AS_PILL_BUTTON'
+,p_static_id=>'display-as-pill-button'
+,p_display_name=>'Display as Pill Button'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form-fieldContainer--radioButtonGroup'
+,p_group_id=>wwv_flow_imp.id(10650600560163505454)
+,p_template_types=>'FIELD'
+,p_help_text=>'Displays the radio buttons to look like a button set / pill button.  Note that the the radio buttons must all be in the same row for this option to work.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650586947282505445)
+,p_theme_id=>42
+,p_name=>'FRM_LARGE'
+,p_static_id=>'frm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-right-lg'
+,p_group_id=>wwv_flow_imp.id(10650586826843505445)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a large right margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650587546212505446)
+,p_theme_id=>42
+,p_name=>'FRM_MEDIUM'
+,p_static_id=>'frm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-right-md'
+,p_group_id=>wwv_flow_imp.id(10650586826843505445)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a medium right margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650588026929505446)
+,p_theme_id=>42
+,p_name=>'FRM_NONE'
+,p_static_id=>'frm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-right-none'
+,p_group_id=>wwv_flow_imp.id(10650586826843505445)
+,p_template_types=>'FIELD'
+,p_help_text=>'Removes the right margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650588423201505448)
+,p_theme_id=>42
+,p_name=>'FRM_SMALL'
+,p_static_id=>'frm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-right-sm'
+,p_group_id=>wwv_flow_imp.id(10650586826843505445)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a small right margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650599541670505454)
+,p_theme_id=>42
+,p_name=>'LARGE_FIELD'
+,p_static_id=>'large-field'
+,p_display_name=>'Large'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form-fieldContainer--large'
+,p_group_id=>wwv_flow_imp.id(10650599403959505454)
+,p_template_types=>'FIELD'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650601145374505454)
+,p_theme_id=>42
+,p_name=>'X_LARGE_SIZE'
+,p_static_id=>'x-large-size'
+,p_display_name=>'X Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Form-fieldContainer--xlarge'
+,p_group_id=>wwv_flow_imp.id(10650599403959505454)
+,p_template_types=>'FIELD'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650589002405505448)
+,p_theme_id=>42
+,p_name=>'FTM_LARGE'
+,p_static_id=>'ftm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-top-lg'
+,p_group_id=>wwv_flow_imp.id(10650588753121505448)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a large top margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650589576891505448)
+,p_theme_id=>42
+,p_name=>'FTM_MEDIUM'
+,p_static_id=>'ftm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-top-md'
+,p_group_id=>wwv_flow_imp.id(10650588753121505448)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a medium top margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650589945969505448)
+,p_theme_id=>42
+,p_name=>'FTM_NONE'
+,p_static_id=>'ftm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-top-none'
+,p_group_id=>wwv_flow_imp.id(10650588753121505448)
+,p_template_types=>'FIELD'
+,p_help_text=>'Removes the top margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650590395433505448)
+,p_theme_id=>42
+,p_name=>'FTM_SMALL'
+,p_static_id=>'ftm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-top-sm'
+,p_group_id=>wwv_flow_imp.id(10650588753121505448)
+,p_template_types=>'FIELD'
+,p_help_text=>'Adds a small top margin for this field.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650598343538505453)
+,p_theme_id=>42
+,p_name=>'FORMREMOVEPADDING'
+,p_static_id=>'formremovepadding'
+,p_display_name=>'Remove Padding'
+,p_display_sequence=>20
+,p_css_classes=>'t-Form--noPadding'
+,p_group_id=>wwv_flow_imp.id(10650598155650505453)
+,p_template_types=>'REGION'
+,p_help_text=>'Removes padding between items.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650598614335505453)
+,p_theme_id=>42
+,p_name=>'FORMSLIMPADDING'
+,p_static_id=>'formslimpadding'
+,p_display_name=>'Slim Padding'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form--slimPadding'
+,p_group_id=>wwv_flow_imp.id(10650598155650505453)
+,p_template_types=>'REGION'
+,p_help_text=>'Reduces form item padding to 4px.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650597562147505453)
+,p_theme_id=>42
+,p_name=>'FORMSIZELARGE'
+,p_static_id=>'formsizelarge'
+,p_display_name=>'Large'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form--large'
+,p_group_id=>wwv_flow_imp.id(10650597422481505453)
+,p_template_types=>'REGION'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650599160238505454)
+,p_theme_id=>42
+,p_name=>'FORMSIZEXLARGE'
+,p_static_id=>'formsizexlarge'
+,p_display_name=>'X Large'
+,p_display_sequence=>20
+,p_css_classes=>'t-Form--xlarge'
+,p_group_id=>wwv_flow_imp.id(10650597422481505453)
+,p_template_types=>'REGION'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650598950526505454)
+,p_theme_id=>42
+,p_name=>'STRETCH_FORM_FIELDS'
+,p_static_id=>'stretch-form-fields'
+,p_display_name=>'Stretch Form Fields'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form--stretchInputs'
+,p_group_id=>wwv_flow_imp.id(10650598751849505454)
+,p_template_types=>'REGION'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650598001851505453)
+,p_theme_id=>42
+,p_name=>'FORMLEFTLABELS'
+,p_static_id=>'formleftlabels'
+,p_display_name=>'Left'
+,p_display_sequence=>20
+,p_css_classes=>'t-Form--leftLabels'
+,p_group_id=>wwv_flow_imp.id(10650597750168505453)
+,p_template_types=>'REGION'
+,p_help_text=>'Align form labels to left.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650597222260505453)
+,p_theme_id=>42
+,p_name=>'SHOWFORMLABELSABOVE'
+,p_static_id=>'showformlabelsabove'
+,p_display_name=>'Show Form Labels Above'
+,p_display_sequence=>10
+,p_css_classes=>'t-Form--labelsAbove'
+,p_group_id=>wwv_flow_imp.id(10650596951387505453)
+,p_template_types=>'REGION'
+,p_help_text=>'Show form labels above input fields.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650583338497505443)
+,p_theme_id=>42
+,p_name=>'RBM_LARGE'
+,p_static_id=>'rbm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-bottom-lg'
+,p_group_id=>wwv_flow_imp.id(10650583159229505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a large bottom margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650583734528505443)
+,p_theme_id=>42
+,p_name=>'RBM_MEDIUM'
+,p_static_id=>'rbm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-bottom-md'
+,p_group_id=>wwv_flow_imp.id(10650583159229505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a medium bottom margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650584207320505443)
+,p_theme_id=>42
+,p_name=>'RBM_NONE'
+,p_static_id=>'rbm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-bottom-none'
+,p_group_id=>wwv_flow_imp.id(10650583159229505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Removes the bottom margin for this region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650584611961505443)
+,p_theme_id=>42
+,p_name=>'RBM_SMALL'
+,p_static_id=>'rbm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-bottom-sm'
+,p_group_id=>wwv_flow_imp.id(10650583159229505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a small bottom margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650585390737505443)
+,p_theme_id=>42
+,p_name=>'RLM_LARGE'
+,p_static_id=>'rlm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-left-lg'
+,p_group_id=>wwv_flow_imp.id(10650585188709505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a large right margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650585753222505443)
+,p_theme_id=>42
+,p_name=>'RLM_MEDIUM'
+,p_static_id=>'rlm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-left-md'
+,p_group_id=>wwv_flow_imp.id(10650585188709505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a medium right margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650586152400505445)
+,p_theme_id=>42
+,p_name=>'RLM_NONE'
+,p_static_id=>'rlm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-left-none'
+,p_group_id=>wwv_flow_imp.id(10650585188709505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Removes the left margin from the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650586564088505445)
+,p_theme_id=>42
+,p_name=>'RLM_SMALL'
+,p_static_id=>'rlm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-left-sm'
+,p_group_id=>wwv_flow_imp.id(10650585188709505443)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a small left margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650587394902505446)
+,p_theme_id=>42
+,p_name=>'RRM_LARGE'
+,p_static_id=>'rrm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-right-lg'
+,p_group_id=>wwv_flow_imp.id(10650587131979505445)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a large right margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650587733490505446)
+,p_theme_id=>42
+,p_name=>'RRM_MEDIUM'
+,p_static_id=>'rrm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-right-md'
+,p_group_id=>wwv_flow_imp.id(10650587131979505445)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a medium right margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650588147098505448)
+,p_theme_id=>42
+,p_name=>'RRM_NONE'
+,p_static_id=>'rrm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-right-none'
+,p_group_id=>wwv_flow_imp.id(10650587131979505445)
+,p_template_types=>'REGION'
+,p_help_text=>'Removes the right margin from the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650588616027505448)
+,p_theme_id=>42
+,p_name=>'RRM_SMALL'
+,p_static_id=>'rrm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-right-sm'
+,p_group_id=>wwv_flow_imp.id(10650587131979505445)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a small right margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650589416560505448)
+,p_theme_id=>42
+,p_name=>'RTM_LARGE'
+,p_static_id=>'rtm-large'
+,p_display_name=>'Large'
+,p_display_sequence=>40
+,p_css_classes=>'margin-top-lg'
+,p_group_id=>wwv_flow_imp.id(10650589154480505448)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a large top margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650589792101505448)
+,p_theme_id=>42
+,p_name=>'RTM_MEDIUM'
+,p_static_id=>'rtm-medium'
+,p_display_name=>'Medium'
+,p_display_sequence=>30
+,p_css_classes=>'margin-top-md'
+,p_group_id=>wwv_flow_imp.id(10650589154480505448)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a medium top margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650590225941505448)
+,p_theme_id=>42
+,p_name=>'RTM_NONE'
+,p_static_id=>'rtm-none'
+,p_display_name=>'None'
+,p_display_sequence=>10
+,p_css_classes=>'margin-top-none'
+,p_group_id=>wwv_flow_imp.id(10650589154480505448)
+,p_template_types=>'REGION'
+,p_help_text=>'Removes the top margin for this region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650590596063505448)
+,p_theme_id=>42
+,p_name=>'RTM_SMALL'
+,p_static_id=>'rtm-small'
+,p_display_name=>'Small'
+,p_display_sequence=>20
+,p_css_classes=>'margin-top-sm'
+,p_group_id=>wwv_flow_imp.id(10650589154480505448)
+,p_template_types=>'REGION'
+,p_help_text=>'Adds a small top margin to the region.'
+);
+wwv_flow_imp_shared.create_template_option(
+ p_id=>wwv_flow_imp.id(10650601542012505456)
+,p_theme_id=>42
+,p_name=>'HIDE_WHEN_ALL_ROWS_DISPLAYED'
+,p_static_id=>'hide-when-all-rows-displayed'
+,p_display_name=>'Hide when all rows displayed'
+,p_display_sequence=>10
+,p_css_classes=>'t-Report--hideNoPagination'
+,p_group_id=>wwv_flow_imp.id(10650601398480505454)
+,p_template_types=>'REPORT'
+,p_help_text=>'This option will hide the pagination when all rows are displayed.'
+);
+wwv_flow_imp.component_end;
+end;
+/
